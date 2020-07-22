@@ -1,0 +1,54 @@
+[T1]
+
+<!DOCTYPE HTML>
+<html>
+<head>
+  <script type="text/javascript">
+  window.onload = function () {
+    var chart = new CanvasJS.Chart("chartContainer",
+    {
+
+      title:{
+      text: "graph of INR exchange rate against EUR from 1 Jan 2019 to 31 Jan 2019"
+      },
+       data: [
+      {
+        type: "line",
+
+        dataPoints: [
+        { x: new Date(2019, 00, 2), y: 79.9855 },
+        { x: new Date(2019, 00, 3), y: 79.608 },
+        { x: new Date(2019, 00, 4), y: 79.4315 },
+        { x: new Date(2019, 00, 7), y: 79.6895 },
+        { x: new Date(2019, 00, 8), y: 80.245 },
+        { x: new Date(2019, 00, 9), y: 80.6365 },
+        { x: new Date(2019, 00, 10), y: 81.2005 },
+        { x: new Date(2019, 00, 11), y: 81.3475 },
+        { x: new Date(2019, 00, 14), y: 81.2195 },
+        { x: new Date(2019, 00, 15), y: 81.231 },
+        { x: new Date(2019, 00, 16), y: 81.0055 },
+        { x: new Date(2019, 00, 17), y: 80.9765 },
+        { x: new Date(2019, 00, 18), y: 81.0875 },
+        { x: new Date(2019, 00, 21), y: 80.9335 },
+        { x: new Date(2019, 00, 22), y: 81.046 },
+        { x: new Date(2019, 00, 23), y: 81.0535 },
+        { x: new Date(2019, 00, 24), y: 80.656 },
+        { x: new Date(2019, 00, 25), y: 80.634 },
+        { x: new Date(2019, 00, 28), y: 81.232 },
+        { x: new Date(2019, 00, 29), y: 81.306 },
+        { x: new Date(2019, 00, 30), y: 81.351 },
+        { x: new Date(2019, 00, 31), y: 81.686 }
+        ]
+      }
+      ]
+    });
+
+    chart.render();
+  }
+  </script>
+ <script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script></head>
+<body>
+  <div id="chartContainer" style="height: 300px; width: 100%;">
+  </div>
+</body>
+</html>
